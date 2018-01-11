@@ -1,0 +1,23 @@
+page-game {
+
+  ion-grid {
+    padding: 0px!important;
+  }
+  .space {
+    background: #F2F2F2;
+    border: 1px solid #ccc;
+    height: 3rem;
+    margin-top: 3px;
+    margin-right: 3px;
+    text-align: center;
+  }
+  ion-row .space:last-child {
+    background: #F2F2F2;
+    border: 1px solid #ccc;
+    height: 3rem;
+    margin-top: 3px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+}

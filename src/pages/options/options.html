@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Opciones</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (submit)="catchForm(s)">
+    <!-- <ion-list> -->
+      <ion-item >
+        <ion-label>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="name" name="name" id="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Dificultad</ion-label>
+        <ion-select [(ngModel)]="dificult" name="dificult" id="dificult">
+          <ion-option value="facil">Facil</ion-option>
+          <ion-option value="intermedio">intermedio</ion-option>
+          <ion-option value="dificil">Dificil</ion-option>
+          <ion-option value="experto">Experto</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Sonido</ion-label>
+        <ion-toggle [(ngModel)]="sound" name="sound" id="sound"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <button type="submit" ion-button block>Guardar Cambios</button>
+      </ion-item>
+
+    <!-- </ion-list> -->
+  </form>
+  <button ion-button block (click)="deleteRecords()">Borrar Records</button>
+
+</ion-content>

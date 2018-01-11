@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title (click)="check()">game</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="">
+    <h4>Puntos: {{points}}</h4>
+  </div>
+  <ion-grid>
+    <ion-row *ngFor="let row of board;let i = index">
+      <ion-col *ngFor="let cell of row;let j = index" id="cell{{i}}and{{j}}" class="space" (click)="check(cell)">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

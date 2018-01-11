@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Records(Top10)</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of pointsTable">
+       {{item.name}}: {{item.points}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,14 +1,18 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title text-center>
+      BuscaMinas
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ul>
+    <li><button type="button" name="button" ion-button block (click)="redirectGame()">Jugar</button></li>
+    <li><button type="button" name="button" ion-button block (click)="showRecords()">Records</button></li>
+    <li><button type="button" name="button" ion-button block (click)="redirectOptions()">Opciones</button></li>
+    <li><button type="button" name="button" ion-button block (click)="showCredits()">Creditos</button></li>
+    <li><button type="button" name="button" ion-button block>Salir</button></li>
+  </ul>
+
 </ion-content>
